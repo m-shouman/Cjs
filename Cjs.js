@@ -244,6 +244,9 @@
                         throw errors.general.ambiguousUsage;
                     }
                 },
+                noConflict: function(newName) {
+                    window[newName] = instance.init();
+                }
             };
             return obj;
         }
@@ -257,7 +260,15 @@
             }
         };
     })();
-
+    window.cjsConfig = {
+        reInit: function(newName) {
+            var C = Cjs.init();
+            if (window.C !== undefined && Object.is(window.C, C)) {
+                delete window.C;
+            }
+            window[newName] = C;
+        }
+    };
     if (window.C === undefined) {
         window.C = Cjs.init();
     }
