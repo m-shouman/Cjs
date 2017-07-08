@@ -2,7 +2,7 @@
 Cjs is a small library for JavaScript that provides some missing features of OOP in JavaScript. Till now it has only overloading feature but it is planned to add another features.
 
 ### Table of Contents
-1. Why Cjs.
+1. [Why Cjs](https://github.com/Sho0ouman/Cjs#1-why-cjs).
 2. Installation.
 3. Get Started.
 4. Recommandations.
