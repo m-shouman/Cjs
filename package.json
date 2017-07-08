@@ -1,0 +1,52 @@
+{
+  "_from": "c-js",
+  "_id": "c-js@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-koyJFcAkU0v6m3VNoAPZ8+mPiDvXm62ggcNS3rNB019kAupXA0Xm5jBr5KE4FfM71w4J9hRRZNBoHoZBRe+Y5A==",
+  "_location": "/c-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "c-js",
+    "name": "c-js",
+    "escapedName": "c-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/c-js/-/c-js-1.0.0.tgz",
+  "_shasum": "fd0df7798b7991d3f77a1621bc4d267d96e03e7c",
+  "_spec": "c-js",
+  "_where": "/home/mshouman/newTest",
+  "author": {
+    "name": "mshouman"
+  },
+  "bugs": {
+    "url": "https://github.com/Sho0ouman/Cjs/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Cjs is a small library for JavaScript that provides some missing features of OOP in JavaScript.",
+  "homepage": "https://github.com/Sho0ouman/Cjs#readme",
+  "keywords": [
+    "JavaScript",
+    "OOP",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "Cjs-min.js",
+  "name": "c-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sho0ouman/Cjs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
