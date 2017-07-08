@@ -16,7 +16,7 @@ Cjs is a small library for JavaScript that provides some missing features of OOP
 #### 2. Installation:
 You can get Cjs using 3 different ways:
 - Git: clone & build this repository.
-- Bower: `$ bower install cjs --save`.
+- Bower: `$ bower install c-js --save`.
 - npm:  `$ npm install cjs`.
 
 after downloading Cjs, add it to your index.htm file `<script src='{yourpath}/cjs/cjs-min.js'></script>`
