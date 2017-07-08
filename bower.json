@@ -1,0 +1,15 @@
+{
+  "name": "Cjs",
+  "main": "Cjs-min.js",
+  "homepage": "https://github.com/Sho0ouman/Cjs",
+  "description": "Cjs is a small library for JavaScript that provides some missing features of OOP in JavaScript.",
+  "keywords": [
+    "JavaScript",
+    "OOP",
+    "front-end"
+  ],
+  "authors": [
+    "mShouman"
+  ],
+  "license": "MIT"
+}
