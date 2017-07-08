@@ -243,9 +243,6 @@
                     } else {
                         throw errors.general.ambiguousUsage;
                     }
-                },
-                noConflict: function(newName) {
-                    window[newName] = instance.init();
                 }
             };
             return obj;
