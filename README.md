@@ -6,13 +6,13 @@ Cjs is a small library for JavaScript that provides some missing features of OOP
 2. [Installation](#2-installation).
 3. [Get Started](#3-get-started).
 4. [Recommandations](#4-recommandations).
-
+- - -
 #### 1. Why Cjs:
 - It's a lightweight library.
 - Isolates your functions in another scope.
 - Provieds a overloading style to your code.
 - Little restrictions of function naming.
-
+- - -
 #### 2. Installation:
 You can get Cjs using 3 different ways:
 - Git: clone & build this repository.
@@ -20,7 +20,7 @@ You can get Cjs using 3 different ways:
 - npm:  `$ npm install c-js`.
 
 after downloading Cjs, add it to your index.htm file `<script src='{yourpath}/cjs/cjs-min.js'></script>`
-
+- - -
 #### 3. Get Started:
 When you add **Cjs** to your index.htm, **Cjs** will add **C** property to **window** object which enables you to use **Cjs** features.
  ***Note:*** if window object has already **C** property, **Cjs** can't add its **C** object so you should follow this:
@@ -44,7 +44,7 @@ What have we done just now? we have registered our function 'greet' in three dif
     C.Function('greet',['Hi','John']); ===> 'Hi John'
 
 As we see Cjs can detect the overload you want at from your parameters type!!
-
+- - -
 #### 4. Recommandations:
 I recommend you to use Cjs first for fun because it is not completed as framework or you can use it in a small project. Creating a standalone file for Cjs function will be more elegant to be used to register your functions and call them in everywhere. 
     
