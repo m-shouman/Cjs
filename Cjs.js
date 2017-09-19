@@ -11,8 +11,7 @@
                     notFollowStandars: new Error("Cjs-Error => functionRegistrationError: used functionName should follow Cjs standards.")
                 },
                 overloadings: {
-                    invalidType: new Error("Cjs-Error => functionRegistrationError: overloadings parameter should be array of strings or empty array."),
-                    number: new Error("Cjs-Error => functionRegistrationError: overloadings length shouldn't exceed 100."),
+                    invalidType: new Error("Cjs-Error => functionRegistrationError: overloadings parameter should be array of strings or empty array."),              
                     unexpectedValue: new Error("Cjs-Error => functionRegistrationError: unexpected value in overloadings parameter.")
                 },
                 returnType: {
@@ -170,19 +169,15 @@
         function validateOverloadings(overloadings) {
             if (overloadings) {
                 if (getType(overloadings) === 'array') {
-                    if (overloadings.length <= 100) {
-                        if (overloadings.length > 0) {
-                            for (var i = 0; i < overloadings.length; i++) {
-                                if (getType(overloadings[i]) !== 'string' && isType(overloadings[i])) {
-                                    throw errors.functionRegistration.overloadings.unexpectedValue;
-                                }
+                    if (overloadings.length > 0) {
+                        for (var i = 0; i < overloadings.length; i++) {
+                            if (getType(overloadings[i]) !== 'string' && isType(overloadings[i])) {
+                                throw errors.functionRegistration.overloadings.unexpectedValue;
                             }
-                            return true;
-                        } else {
-                            return true;
                         }
+                        return true;
                     } else {
-                        throw errors.functionRegistration.overloadings.number;
+                        return true;
                     }
                 } else {
                     throw errors.functionRegistration.overloadings.invalidType;
