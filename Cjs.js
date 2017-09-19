@@ -126,25 +126,16 @@
         }
 
         function excuteFunction(func, params) {
-            var result = func.callback(
-                params[0], params[1], params[2], params[3], params[4], params[5],
-                params[6], params[7], params[8], params[9], params[10], params[11],
-                params[12], params[13], params[14], params[15], params[16], params[17],
-                params[18], params[19], params[20], params[21], params[22], params[23],
-                params[24], params[25], params[26], params[27], params[28], params[29],
-                params[30], params[31], params[32], params[33], params[33], params[34],
-                params[35], params[36], params[37], params[38], params[39], params[40],
-                params[41], params[42], params[43], params[44], params[45], params[46],
-                params[47], params[48], params[49], params[50], params[51], params[52],
-                params[53], params[54], params[55], params[56], params[57], params[58],
-                params[59], params[60], params[61], params[62], params[63], params[64],
-                params[65], params[66], params[67], params[68], params[69], params[70],
-                params[71], params[72], params[73], params[74], params[75], params[76],
-                params[77], params[78], params[79], params[80], params[81], params[82],
-                params[83], params[84], params[85], params[86], params[87], params[88],
-                params[89], params[90], params[91], params[92], params[93], params[93],
-                params[94], params[95], params[96], params[97], params[98], params[99]
-            );
+            var result;
+            var callbackExcution = "result = func.callback(";
+            for (var i = 0; i < params.length; i++) {
+                callbackExcution += "params[" + i + "],";
+            }
+            if (callbackExcution[callbackExcution.length - 1] === ",") {
+                callbackExcution = callbackExcution.slice(0, -1);
+            }
+            callbackExcution += ");";
+            eval(callbackExcution);
             return result;
         }
 
