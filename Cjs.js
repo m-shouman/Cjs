@@ -90,7 +90,7 @@
             if (func === undefined) {
                 throw errors.functionCalling.undefinedFunction;
             }
-            result = excuteFunction(func, params);
+            result = executeFunction(func, params);
             var resultType = getRetrunType(result);
             if (func.type === resultType) {
                 if (resultType !== 'void') {
@@ -124,17 +124,9 @@
             return func;
         }
 
-        function excuteFunction(func, params) {
+        function executeFunction(func, params) {
             var result;
-            var callbackExcution = "result = func.callback(";
-            for (var i = 0; i < params.length; i++) {
-                callbackExcution += "params[" + i + "],";
-            }
-            if (callbackExcution[callbackExcution.length - 1] === ",") {
-                callbackExcution = callbackExcution.slice(0, -1);
-            }
-            callbackExcution += ");";
-            eval(callbackExcution);
+            result = func.callback.apply(undefined, params);
             return result;
         }
 
